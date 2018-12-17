@@ -25,19 +25,6 @@ spring-boot application source: [./simple_spring_boot_app](./simple_spring_boot_
             "timestamp": 1545055225
         },
         "lastName": "Person"
-    },
-    {
-        "firstName": "Good",
-        "id": {
-            "counter": 4457270,
-            "date": "2018-12-17T16:14:46.000+0000",
-            "machineIdentifier": 4263416,
-            "processIdentifier": 1,
-            "time": 1545063286000,
-            "timeSecond": 1545063286,
-            "timestamp": 1545063286
-        },
-        "lastName": "Person"
     }
 ]
 ```
