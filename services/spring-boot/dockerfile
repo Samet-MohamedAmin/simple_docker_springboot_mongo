@@ -1,0 +1,7 @@
+FROM java
+
+COPY ./source/demo.jar /
+
+# ENV MONGO_HOST=localhost
+
+CMD [ "java", "-jar", "/demo.jar" ]

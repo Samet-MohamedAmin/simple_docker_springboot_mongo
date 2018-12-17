@@ -1,0 +1,20 @@
+version: '3'
+services:
+  spring-boot:
+    container_name: spring-boot
+    build:
+      context: ./services/spring-boot
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_HOST=mongo
+    ports:
+      - "8081:8080"
+
+  
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    volumes:
+      - "./volumes/mongod:/data/db/journal"
