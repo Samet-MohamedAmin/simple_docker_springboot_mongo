@@ -18,7 +18,7 @@ import com.example.demo.repository.PersonRepository;
 
 @RestController
 @RequestMapping(path = "", produces = "application/json")
-class personController {
+class PersonController {
 
     @Autowired
     PersonRepository personRepository;
