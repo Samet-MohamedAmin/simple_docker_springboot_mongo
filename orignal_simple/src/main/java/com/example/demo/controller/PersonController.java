@@ -17,7 +17,7 @@ import com.example.demo.repository.PersonRepository;
 
 
 @RestController
-@RequestMapping(path = "", produces = "application/json")
+@RequestMapping(path = "/api/person", produces = "application/json")
 class PersonController {
 
     @Autowired
@@ -26,7 +26,7 @@ class PersonController {
     /*
      * person mapping
      */
-    @GetMapping(path="/api/person/get")
+    @GetMapping(path="/get")
     public ResponseEntity<List<Person>> findAll() {
         List<Person> personsList = personRepository.findAll();
         return new ResponseEntity<List<Person>>(personsList, HttpStatus.OK);
